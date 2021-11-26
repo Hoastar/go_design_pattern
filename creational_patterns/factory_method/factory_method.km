@@ -1,0 +1,88 @@
+{
+    "root": {
+        "data": {
+            "id": "cf4z4i4ir680",
+            "created": 1634808154293,
+            "text": "Factory_method(工厂方法模式)"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cf4z6tficow0",
+                    "created": 1634808335631,
+                    "text": "定义",
+                    "layout_mind_offset": {
+                        "x": -69,
+                        "y": 3
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cf4z6xev7f40",
+                            "created": 1634808344299,
+                            "text": "创建型设计模式，其在父类中提供一个创建对象的方法，允许子类决定实例化对象的类型"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cf5qc87g7wo0",
+                            "created": 1634884929583,
+                            "text": "其中工厂父类负责定义创建产品对象的公共接口，工厂子类则负责生成具体的产品对象"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cf5qplqc7qg0",
+                            "created": 1634885977758,
+                            "text": "简单就是它提供了一种将实例化逻辑委托给子类的方法"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cf4z8zw2tgg0",
+                    "created": 1634808506421,
+                    "text": "适用场景",
+                    "layout_mind_offset": {
+                        "x": 71,
+                        "y": -1
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cf4z96qbdfs0",
+                            "created": 1634808521310,
+                            "text": "如无法预知对象确切类别以及其依赖关系时可用"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cf4z9tu61nk0",
+                            "created": 1634808571609,
+                            "text": "希望扩展框架/库的内部组件"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cf4zbxjep7k0",
+                            "created": 1634808736394,
+                            "text": "复用对象来节省资源并非每次都重新创建 "
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

@@ -1,0 +1,322 @@
+{
+    "root": {
+        "data": {
+            "id": "cf417bv1x7k0",
+            "created": 1634712458016,
+            "text": "单例模式Singleton"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cf41iwpki1s0",
+                    "created": 1634713365402,
+                    "text": "定义",
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cf41j9zml3s0",
+                            "created": 1634713394309,
+                            "text": "一个类只允许创建一个对象（或实例），那这个类就是单例类，这种设计模式叫单例设计模式",
+                            "layout_left_offset": {
+                                "x": -727,
+                                "y": -13
+                            }
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cf41jo59uzs0",
+                    "created": 1634713425125,
+                    "text": "用处"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cf41k0wxxgo0",
+                            "created": 1634713452919,
+                            "text": "保证一个类只有一个实例；为该实例提供一个全局访问节点",
+                            "layout_left_offset": {
+                                "x": -53,
+                                "y": -14
+                            }
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cf41kc8r6lc0",
+                    "created": 1634713477578,
+                    "text": "如何实现 "
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cf41ky925740",
+                            "created": 1634713525486,
+                            "text": "在类中添加一个私有静态成员变量用于保存单例实例"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cf41l6oqb600",
+                            "created": 1634713543848,
+                            "text": "声明一个公有静态构建方法获取单例实例"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cf41l5at85s0",
+                            "created": 1634713540829,
+                            "text": "是否考虑延迟加载、对象创建时的线程安全问题 "
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cf41l28eqig0",
+                            "created": 1634713534154,
+                            "text": "考虑getInstance的性能问题（是否有加锁）"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cf41pcvbduw0",
+                    "created": 1634713870763,
+                    "text": "唯一性"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cf41pu6w6cw0",
+                            "created": 1634713908469,
+                            "text": "进程间唯一"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cf41q8giwwo0",
+                            "created": 1634713939526,
+                            "text": "实现线程间唯一？"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cf424sgoirc0",
+                                    "created": 1634715080169,
+                                    "text": "通过线程获取线程id"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cf4251yp0vs0",
+                                    "created": 1634715100850,
+                                    "text": "go的协程中无法实现，gid私有未暴露"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cf41qu2ob4w0",
+                            "created": 1634713986578,
+                            "text": "集群之间唯一？（多进程）"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cf426oi4s5k0",
+                                    "created": 1634715228278,
+                                    "text": "通过外部共享存储的锁进行。例如文件"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cf41ru76iqg0",
+                    "created": 1634714065214,
+                    "text": "存在的问题"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cf427914cpk0",
+                            "created": 1634715272962,
+                            "text": "违反了单一职责原则"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cf427ne1oq00",
+                            "created": 1634715304219,
+                            "text": "可能掩盖不良设计，比如程序各组件之间相互了解过多"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cf428rwge2o0",
+                            "created": 1634715392403,
+                            "text": "多线程情况下需要特殊处理，避免多个线程多次创建单例对象"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cf429lryg280",
+                            "created": 1634715457434,
+                            "text": "单例的客户端代码单元测试较困难"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cf41scm5wbk0",
+                    "created": 1634714105302,
+                    "text": "实现方式"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cf42kmz7c9c0",
+                            "created": 1634716322055,
+                            "text": "饿汉式"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cf42nio642o0",
+                                    "created": 1634716547773,
+                                    "text": "类加载的时候，instance实例就已经创建好了"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cf42pdgub1c0",
+                                    "created": 1634716693175,
+                                    "text": "instance的创建过程是线程安全的"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cf436ti6gu80",
+                                    "created": 1634718060276,
+                                    "text": "不支持延迟加载"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cf4377ergwg0",
+                                    "created": 1634718090543,
+                                    "text": "初始化时间比较长"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cf42l673fqw0",
+                            "created": 1634716363891,
+                            "text": "懒汉式"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cf437u6w6yw0",
+                                    "created": 1634718140134,
+                                    "text": "在调用getInstance时再创建"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cf438xfv3vk0",
+                                    "created": 1634718225570,
+                                    "text": "instance创建过程需要加锁"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cf439rpc9pc0",
+                                    "created": 1634718291447,
+                                    "text": "不支持高并发"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cf439l388740",
+                                    "created": 1634718277049,
+                                    "text": "支持延迟加载"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cf42kwmgi6w0",
+                            "created": 1634716343052,
+                            "text": "双重检测"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cf43ahp35ko0",
+                                    "created": 1634718348028,
+                                    "text": "在懒汉式的基础上，将方法的锁改成类级别的锁"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cf43h14tqlc0",
+                                    "created": 1634718860523,
+                                    "text": "相对于懒汉式的粒度更小，不会每次都去获取锁"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cf42kva44ps0",
+                            "created": 1634716340129,
+                            "text": "静态内部类"
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

@@ -1,0 +1,139 @@
+{
+    "root": {
+        "data": {
+            "id": "cf4q6xreemw0",
+            "created": 1634782955068,
+            "text": "Builder(生成器模式)"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cf4s3fsmdw80",
+                    "created": 1634788323088,
+                    "text": "定义"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cf4s3leqmn40",
+                            "created": 1634788335308,
+                            "text": "一种创建型设计模式，能够使你分步骤创建复杂对象"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cf4s5ka4kew0",
+                    "created": 1634788489581,
+                    "text": "应用场景"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cf4s5peo4zk0",
+                            "created": 1634788500739,
+                            "text": "可避免”重叠构造函数“的出现"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cf4s6insyko0",
+                            "created": 1634788564418,
+                            "text": "希望创建不同形式的产品（制造过程相似且仅有细节上的差异）"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cf4s88g7pgw0",
+                            "created": 1634788698920,
+                            "text": "构造组合树或其他复杂对象"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cf4vgqf7myw0",
+                                    "created": 1634797828284,
+                                    "text": "类中属性较多；且有一定依赖关系、或约束条件；存在必选或者非必选的属性"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cf4v1yzmw4g0",
+                    "created": 1634796671471,
+                    "text": "如何实现"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cf4v25o79c00",
+                            "created": 1634796686017,
+                            "text": "清晰的定义通用步骤，确保制造all形式的产品（在基本生成器接口中声明这些步骤）"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cf4v3gd7hp40",
+                            "created": 1634796787661,
+                            "text": "为每个形式的产品创建剧图生成器类，并实现其构造步骤"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cf4v8e8qsd40",
+                            "created": 1634797174858,
+                            "text": "考虑创建主管类（可以使用同一生成器对象封装多种构建产品的方式）"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cf4v9j1zryw0",
+                            "created": 1634797263698,
+                            "text": "客户端会同时创建生成器和主管对象"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cf4v9zmwec00",
+                            "created": 1634797299791,
+                            "text": "只有在所有产品都遵循相同接口的情况下，构造结果可以直接通过主管类获取。否则，客户端应当通过生成器获取构建结果"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cf4xs3b102o0",
+                    "created": 1634804360555,
+                    "text": "现象"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cf4xs81ob3s0",
+                            "created": 1634804370873,
+                            "text": "一般的链式操作都是生成器模式"
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

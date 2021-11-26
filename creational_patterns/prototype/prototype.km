@@ -1,0 +1,218 @@
+{
+    "root": {
+        "data": {
+            "id": "cf43sn0dk6o0",
+            "created": 1634719770149,
+            "text": "Prototype(原型模式)"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cf43wcr03zk0",
+                    "created": 1634720061271,
+                    "text": "定义",
+                    "layout_mind_offset": {
+                        "x": 68,
+                        "y": -120.0000228881836
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cf43xhrczuw0",
+                            "created": 1634720150541,
+                            "text": "一种创建型设计模式，能够利用已有对象（原型）进行复制的方式，创建新对象，而无须使代码依赖它们所属的类"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cf43wgsv0zs0",
+                    "created": 1634720070091,
+                    "text": "使用场景",
+                    "layout_mind_offset": {
+                        "x": 58,
+                        "y": -52
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cf442lo5svc0",
+                            "created": 1634720550876,
+                            "text": "需要复制一些对象，同时希望代码独立与这些对象所属的类"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cf4435qv0b40",
+                            "created": 1634720594575,
+                            "text": "如果子类的区别仅在于其对象的初始化方式（对象创建成本大），那么可通过这一模式来减少子类的数量。"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cf447gf9iw00",
+                                    "created": 1634720931275,
+                                    "text": "对象数据需要进行复杂计算，排序、hash"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cf447xenqjk0",
+                                    "created": 1634720968243,
+                                    "text": "从io中获取"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cf43wvoyt000",
+                    "created": 1634720102507,
+                    "text": "具体实现方式",
+                    "layout_mind_offset": {
+                        "x": -4,
+                        "y": 98
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cf4488xp7c00",
+                            "created": 1634720993339,
+                            "text": "深拷贝"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cf45wfeniuo0",
+                                    "created": 1634725709275,
+                                    "text": "完全复制，复制出的对象和原本的对象没有关系"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cf45wl88srk0",
+                                    "created": 1634725721948,
+                                    "text": "实现方式"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cf45x7gcl8w0",
+                                            "created": 1634725770327,
+                                            "text": "递归复制"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cf45xdazrvk0",
+                                            "created": 1634725783064,
+                                            "text": "序列化、反序列化"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cf448cg538g0",
+                            "created": 1634721000985,
+                            "text": "浅拷贝"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cf45xldv1mg0",
+                                    "created": 1634725800652,
+                                    "text": "仅复制对象的引用，不递归进行复制"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cf45z8jiv6o0",
+                                    "created": 1634725929424,
+                                    "text": "如果字段对应一个可变对象，那么复制的对象的改动会导致原来对象的更改"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cf4610scgjk0",
+                                    "created": 1634726069272,
+                                    "text": "如果是不可变对象，则无任何问题"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cf44ah9q9480",
+                    "created": 1634721168209,
+                    "text": "如何实现",
+                    "layout_mind_offset": {
+                        "x": 599,
+                        "y": 48.999987411498296
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cf44ep9upk00",
+                            "created": 1634721499088,
+                            "text": "创建原型接口，并申明克隆方法",
+                            "layout_right_offset": {
+                                "x": 367,
+                                "y": -15
+                            }
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cf44fbhtigg0",
+                            "created": 1634721547459,
+                            "text": "原类型必须定义一个以该对象为参数的构造函数。构造函数必须复制参数对象中的所有成员变量到新建的实体中。",
+                            "layout_right_offset": {
+                                "x": 801.9999999999999,
+                                "y": -5
+                            }
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cf44ji73oj40",
+                            "created": 1634721875505,
+                            "text": "还可以创建一个中心化原型注册表，用于存储常用原型",
+                            "layout_right_offset": {
+                                "x": 506,
+                                "y": -3
+                            }
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
