@@ -1,0 +1,278 @@
+{
+    "root": {
+        "data": {
+            "id": "cfg6lk0j7og0",
+            "created": 1635946397889,
+            "text": "adapter(适配器模式)"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cfg6luicl9c0",
+                    "created": 1635946420734,
+                    "text": "定义",
+                    "layout_mind_offset": {
+                        "x": -101,
+                        "y": 0
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cfg6lykcgjk0",
+                            "created": 1635946429562,
+                            "text": "将一个接口转换成客户希望的另一个接口，适配器模式使接口不兼容的类可以一起工作。"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cfg6mw8i54o0",
+                            "created": 1635946502857,
+                            "text": "类结构型模式、对象结构型模式都可，也就对应着两种实现方式。"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cfg6nqzbwv40",
+                    "created": 1635946569782,
+                    "text": "适用场景",
+                    "layout_mind_offset": {
+                        "x": -101,
+                        "y": -11
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cfg6o1cocf40",
+                            "created": 1635946592357,
+                            "text": "系统需要现有的类，而这些接口不符合系统的需要"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cfg6ozij9pk0",
+                            "created": 1635946666722,
+                            "text": "想建立一个可以重复使用的类\n用于一些彼此之间没有太大关联的一些类，包括一些可能在将来引进来的类一起工作。",
+                            "layout_left_offset": {
+                                "x": 4.999992106109858,
+                                "y": -10
+                            }
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cfg6tkgb70g0",
+                    "created": 1635947025756,
+                    "text": "实现方式",
+                    "layout_mind_offset": {
+                        "x": 119,
+                        "y": -6
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cfg6tsmgjso0",
+                            "created": 1635947043543,
+                            "text": "类适配器"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cfg6u3uwjbk0",
+                                    "created": 1635947067998,
+                                    "text": "继承实现"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cfg6ty877vc0",
+                            "created": 1635947055741,
+                            "text": "对象适配器"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cfg6u83hbns0",
+                                    "created": 1635947077223,
+                                    "text": "组合实现"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cfg762zv1eg0",
+                    "created": 1635948006491,
+                    "text": "区别",
+                    "layout_mind_offset": {
+                        "x": 115,
+                        "y": -7
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cfg767wepzk0",
+                            "created": 1635948017166,
+                            "text": "代理模式"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cfg76dfy2u00",
+                                    "created": 1635948029231,
+                                    "text": "代理模式在不改变原始类接口的条件下，为原始类定义一个代理类，\n主要目的是控制访问，而非加强功能，这是它们之间最大的不同。",
+                                    "layout_left_offset": {
+                                        "x": 13.999977795407176,
+                                        "y": 1
+                                    }
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cfg78lyztr40",
+                            "created": 1635948204525,
+                            "text": "桥接模式"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cfg78qmq3tk0",
+                                    "created": 1635948214667,
+                                    "text": "桥接模式的目的是将接口部分和实现部分分离，\n从让它们可以较为容易、也相对独立的加以改变",
+                                    "layout_left_offset": {
+                                        "x": -3,
+                                        "y": -14
+                                    }
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cfg79w7m3ko0",
+                            "created": 1635948305179,
+                            "text": "装饰器模式"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cfg7a2xe3o80",
+                                    "created": 1635948319798,
+                                    "text": "装饰器在不改变原始类接口的情况下，对原始类功能进行加强，\n而且支持多个装饰器的嵌套使用",
+                                    "layout_left_offset": {
+                                        "x": 19,
+                                        "y": -18
+                                    }
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cfg7bav7qhs0",
+                            "created": 1635948415445,
+                            "text": "适配器模式"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cfg7bh1fmko0",
+                                    "created": 1635948428882,
+                                    "text": "适配器模式是一种事后的补救策略。适配器提供跟原始类不同的接口，\n而代理模式、装饰器模式提供的都是跟原始类相同的接口。",
+                                    "layout_left_offset": {
+                                        "x": -28,
+                                        "y": -9
+                                    }
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cfg7dyjz9p40",
+                    "created": 1635948623737,
+                    "text": "具体应用场景"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cfg7e47z9nk0",
+                            "created": 1635948636072,
+                            "text": "接口不兼容"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cfg7e8ntsls0",
+                                    "created": 1635948645737,
+                                    "text": "封装有缺陷的接口设计"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cfg7ehdk3tc0",
+                                    "created": 1635948664707,
+                                    "text": "统一多个类的接口设计"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cfg7espspu00",
+                                    "created": 1635948689392,
+                                    "text": "替换依赖的外部系统"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cfg7f6is0kg0",
+                                    "created": 1635948719442,
+                                    "text": "兼容老版本接口"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cfg7fdyv0so0",
+                                    "created": 1635948735652,
+                                    "text": "适配不同格式的数据"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

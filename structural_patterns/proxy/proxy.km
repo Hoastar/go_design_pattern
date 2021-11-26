@@ -1,0 +1,174 @@
+{
+    "root": {
+        "data": {
+            "id": "cfege4vn4ns0",
+            "created": 1635770907578,
+            "text": "proxy(代理模式)"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cfegeamgv5k0",
+                    "created": 1635770920084,
+                    "text": "定义",
+                    "layout_mind_offset": {
+                        "x": -60,
+                        "y": -2
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cfegeow06340",
+                            "created": 1635770951136,
+                            "text": "对象结构型模型，给某一个对象提供一个代理，并由代理对象控制对原对象的引用。",
+                            "layout_right_offset": {
+                                "x": -22,
+                                "y": 2
+                            }
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cfeggu0q8uo0",
+                    "created": 1635771119034,
+                    "text": "适应场景"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cfeggyb5an40",
+                            "created": 1635771128371,
+                            "text": "远程代理"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cfegh5lgvj40",
+                                    "created": 1635771144232,
+                                    "text": "为一个位于不同地址空间的对象提供一个本地的代理"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cfegiafw7l40",
+                            "created": 1635771233143,
+                            "text": "虚拟代理"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cfegihrghls0",
+                                    "created": 1635771249080,
+                                    "text": "如果需要创建一个资源消耗比较大的对象，可先创建一个相对较小的对象来表示，真实对象只在需要时才被真正创建"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cfegjruiau80",
+                                    "created": 1635771349396,
+                                    "text": "copy on write"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cfegk8jhg0w0",
+                                            "created": 1635771385735,
+                                            "text": "虚拟代理的一种，把复制（克隆）操作延迟 到只有在客户端真正需要时才执行。"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cfeglc0ncbk0",
+                            "created": 1635771471668,
+                            "text": "保护代理（Protect or Access）"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cfeglqvlv280",
+                                    "created": 1635771504014,
+                                    "text": "控制对一个对象的访问，可以给不同用户提供不同级别的权限。"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cfegnq6sh1k0",
+                    "created": 1635771659242,
+                    "text": "静态代理"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cfego6p2x2g0",
+                            "created": 1635771695177,
+                            "text": "代理类实现和源类相同的接口，每个类都单独编辑一个代理类"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cfegp0mlrnc0",
+                            "created": 1635771760330,
+                            "text": "一方面，我们需要在代理类中，将原始类的中所有方法都重新实现一遍，并且为每个方法都附加相似的代码逻辑"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cfegq8jad140",
+                            "created": 1635771855908,
+                            "text": "另一方面，如果要添加的附加功能的类有不止一个，我们需要针对每个类都创建一个代理类。"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cfegnu6wg0w0",
+                    "created": 1635771667956,
+                    "text": "动态代理"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cfegrs8g3a80",
+                            "created": 1635771977153,
+                            "text": "就是我们不事先为每个原始类编写代理类\n而是在运行的时候，动态的创建原始类对应的代理类，然后在系统中用代理类替换掉原始类"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cfegsqofrzs0",
+                            "created": 1635772052130,
+                            "text": "一般采用反射实现。"
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

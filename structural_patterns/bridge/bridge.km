@@ -1,0 +1,273 @@
+{
+    "root": {
+        "data": {
+            "id": "cfehvvdgugo0",
+            "created": 1635775118553,
+            "text": "Bridge(桥接模式)"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cffb0494ogw0",
+                    "created": 1635857263526,
+                    "text": "定义",
+                    "layout_mind_offset": {
+                        "x": -96,
+                        "y": 18
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cffb090rs8o0",
+                            "created": 1635857273904,
+                            "text": "一种结构型设计模式"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cffb0g7h1tk0",
+                            "created": 1635857289547,
+                            "text": "可将一个大类或者一系列紧密相关的类拆分为抽象和实现俩个独立的层级结构（解耦）"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cffb36050ww0",
+                    "created": 1635857502428,
+                    "text": "理解",
+                    "layout_mind_offset": {
+                        "x": -99,
+                        "y": 8
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cffb391icgw0",
+                            "created": 1635857509041,
+                            "text": "抽象化：总的来说就是忽略一些信息，把不同的实体当成同样的实体来对待。\n将对象的共同性质抽取出来形成类的过程即为抽象化的过程",
+                            "layout_left_offset": {
+                                "x": 8.99999644048512,
+                                "y": -26
+                            }
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cffb5m3zbzk0",
+                            "created": 1635857694217,
+                            "text": "实现化：针对抽象化给出具体实现。抽象化与实现化是一对互逆的概念。\n实现化产生的对象比抽象化更为具体，是对抽象化事物的进一步具体化的产物",
+                            "layout_left_offset": {
+                                "x": 12,
+                                "y": -10
+                            }
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cffb82cvkxk0",
+                            "created": 1635857886312,
+                            "text": "脱耦：就是将抽象化和实现化之间的耦合解脱开\n或者说将它们之间的强关联改成弱关联将继承改为关联关系（组合或者聚合）。而不是继承关系",
+                            "layout_left_offset": {
+                                "x": -11.000005181878805,
+                                "y": 9
+                            }
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cffbpm79iw00",
+                    "created": 1635859261699,
+                    "text": "适应场景",
+                    "layout_mind_offset": {
+                        "x": -138,
+                        "y": -7
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cffbprddm7k0",
+                            "created": 1635859272953,
+                            "text": "如果想要拆分或者重组一个具有多重功能的旁杂类，例如能与多个服务器进行交互的类"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cffbvuptoj40",
+                            "created": 1635859750421,
+                            "text": "如果希望在几个独立的维度上扩展一个类"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cffby0k26800",
+                            "created": 1635859919861,
+                            "text": "需要在运行时切换不同的实现方法"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cffbqhgh7xc0",
+                    "created": 1635859329737,
+                    "text": "其他",
+                    "layout_mind_offset": {
+                        "x": 108,
+                        "y": -64
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cffbqmzfepk0",
+                            "created": 1635859341766,
+                            "text": "很多设计模式都是视图将庞大的类拆分成更细小的类，然后再通过某种更合理的结构组装在一起。"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cffbz9hntr40",
+                    "created": 1635860017671,
+                    "text": "示例",
+                    "layout_mind_offset": {
+                        "x": 126,
+                        "y": -67
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cffbzcrm8dk0",
+                            "created": 1635860024804,
+                            "text": "监控告警",
+                            "layout_left_offset": {
+                                "x": 12,
+                                "y": -2
+                            }
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cffbzk9fybk0",
+                                    "created": 1635860041119,
+                                    "text": "有不同的告警类别（告警级别或着等级），有不同的通知类型（通信方式）"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cffc0q8idi00",
+                                    "created": 1635860132487,
+                                    "text": "将通知类型和告警类别进行拆分成俩个类，将通知类型作为参数传递给告警类别即可"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cffc831ayzs0",
+                    "created": 1635860708899,
+                    "text": "实现细节",
+                    "layout_mind_offset": {
+                        "x": 165,
+                        "y": -52
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cffcc5lj4mo0",
+                            "created": 1635861027932,
+                            "text": "明确类中独立的维度",
+                            "layout_left_offset": {
+                                "x": -48,
+                                "y": -40
+                            }
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cffccehmstc0",
+                            "created": 1635861047288,
+                            "text": "了解客户端的业务需求，并在抽象基类中定义他们（不同维度）",
+                            "layout_left_offset": {
+                                "x": -47,
+                                "y": -48
+                            }
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cffdb1dve8o0",
+                            "created": 1635863761508,
+                            "text": "确定在所有平台上都可执行的业务。 并在通用实现接口中声明抽象部分所需的业务。"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cffd6487fq80",
+                            "created": 1635863375875,
+                            "text": "为你域内的所有平台创建实现类， 但需确保它们遵循实现部分的接口。"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cffd9xh9vmw0",
+                            "created": 1635863674642,
+                            "text": "在抽象类中添加指向实现类型的引用成员变量。 \n抽象部分会将大部分工作委派给该成员变量所指向的实现对象。",
+                            "layout_left_offset": {
+                                "x": -65,
+                                "y": -9
+                            }
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cffd8v5l9000",
+                            "created": 1635863591218,
+                            "text": "如果你的高层逻辑有多个变体， 则可通过扩展抽象基类为每个变体创建一个精确抽象。"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cffcdh1s7nc0",
+                            "created": 1635861131224,
+                            "text": "客户端代码必须将实现对象传递给抽象部分的构造函数才能使其能够相互关联。 \n此后， 客户端只需与抽象对象进行交互， 无需和实现对象打交道。 "
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
