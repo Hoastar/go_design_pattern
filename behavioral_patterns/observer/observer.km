@@ -1,0 +1,97 @@
+{
+    "root": {
+        "data": {
+            "id": "cfdm11honz40",
+            "created": 1635685248173,
+            "text": "observer(观察者模式)"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cfdm2o3xrt40",
+                    "created": 1635685375772,
+                    "text": "定义"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cfdm2tpvfew0",
+                            "created": 1635685387982,
+                            "text": "定义对象间的一种一对多依赖关系"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cfdm35hp7080",
+                            "created": 1635685413609,
+                            "text": "使得每当一个对象状态发生改变时，其相关依赖对象皆得到通知并被自动更新。观察者模式又叫做发布-订阅 "
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cfdm7h0ekg00",
+                    "created": 1635685752141,
+                    "text": "适应场景"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cfdm7l1mtvc0",
+                            "created": 1635685760923,
+                            "text": "如果一个观察目标对象有很多直接和间接的观察者的话，将所有的观察者都通知到会花费很多时间。 "
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cfdm864v8k80",
+                            "created": 1635685806832,
+                            "text": "一个对象必须通知其他对象，而并不知道这些对象是谁。"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cfdm8wtk0vc0",
+                            "created": 1635685864920,
+                            "text": "一个对象的改变将导致其他一个或多个对象也发生改变，而不知道具体有多少对象将发生改变，可以降低对象之间的耦合度。"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cfdm8z8ks0g0",
+                            "created": 1635685870182,
+                            "text": "需要在系统中创建一个触发链，A对象的行为将影响B对象，B对象的行为将影响C对象……，可以使用观察者模式创建一种链式触发机制。"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cfdm9oql9rc0",
+                    "created": 1635685925690,
+                    "text": "别名"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cfdm9ssa78o0",
+                            "created": 1635685934500,
+                            "text": "发布订阅模式"
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

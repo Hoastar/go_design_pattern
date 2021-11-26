@@ -1,0 +1,152 @@
+{
+    "root": {
+        "data": {
+            "id": "cfdllgklzzk0",
+            "created": 1635684027175,
+            "text": "Iterator(迭代器模式)"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cfdlnhb3lqo0",
+                    "created": 1635684185505,
+                    "text": "定义"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cfdlnn263xc0",
+                            "created": 1635684198025,
+                            "text": "行为设计模式， 让你能在不暴露集合底层表现形式 （列表、 栈和树等） 的情况下遍历集合中所有的元素。opic"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cfdloql6juo0",
+                    "created": 1635684284069,
+                    "text": "适应场景"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cfdloudljrc0",
+                            "created": 1635684292318,
+                            "text": "当集合背后为复杂的数据结构， 且你希望对客户端隐藏其复杂性时 （出于使用便利性或安全性的考虑）， 可以使用迭代器模式。",
+                            "layout_left_offset": {
+                                "x": 8,
+                                "y": -4
+                            }
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cfdlp8ykvi80",
+                            "created": 1635684324062,
+                            "text": "使用该模式可以减少程序中重复的遍历代码"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cfdlphulttk0",
+                            "created": 1635684343412,
+                            "text": "希望代码能够遍历不同的甚至是无法预知的数据结构， 可以使用迭代器模式topic"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cfdlq3n2v880",
+                    "created": 1635684390847,
+                    "text": "具体实现",
+                    "layout_mind_offset": {
+                        "x": 1,
+                        "y": -37
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cfdlq94lngw0",
+                            "created": 1635684402790,
+                            "text": "容器 ",
+                            "layout_left_offset": {
+                                "x": -1,
+                                "y": -22
+                            }
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cfdlrrgusu80",
+                                    "created": 1635684521077,
+                                    "text": "容器通过iterator()方法来创建迭代器"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cfdlsg6op0w0",
+                            "created": 1635684574882,
+                            "text": "容器迭代器"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cfdlsndkcc00",
+                                    "created": 1635684590535,
+                                    "text": "迭代器接口需要定义HasNext()、CurrentItem()、Next() 三个最基本的方法"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cfdlwdmiosw0",
+                    "created": 1635684882765,
+                    "text": "优点"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cfdlwl8pgds0",
+                            "created": 1635684899345,
+                            "text": "迭代器模式封装集合内部的复杂数据结构、开发者不需要了解如何遍历，直接使用容器使用的迭代器即可。"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cfdlxs9kxb40",
+                            "created": 1635684992999,
+                            "text": "迭代器模式将集合对象的遍历操作从集合类中拆分出来，放在迭代器类中，让两者的职责更加单一。"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cfdlzfc6nkw0",
+                            "created": 1635685121587,
+                            "text": "让添加新的遍历算法更加容易，更符合开闭原则"
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

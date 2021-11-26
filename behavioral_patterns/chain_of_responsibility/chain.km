@@ -1,0 +1,98 @@
+{
+    "root": {
+        "data": {
+            "id": "cfcetec4hs80",
+            "created": 1635563341495,
+            "text": "chain of responsibility(责任链模式)"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cfcexeqnenk0",
+                    "created": 1635563655830,
+                    "text": "定义",
+                    "layout_mind_offset": {
+                        "x": -79.99999880790688,
+                        "y": -6.2499999068677425
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cfcexk47tq00",
+                            "created": 1635563667534,
+                            "text": "允许你将请求沿着处理者链进行发送。收到请求后，每个处理者均可对请求进行处理，或将其传递给链上的下一个处理者"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cfcezelp9kg0",
+                    "created": 1635563812259,
+                    "text": "适用场景",
+                    "layout_mind_offset": {
+                        "x": 98.74999852851022,
+                        "y": -1.2499999813735485
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cfceziwzff40",
+                            "created": 1635563821649,
+                            "text": "复用和扩展。在实际项目开发中比较常用，比如框架开发。"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cfcf0y411h40",
+                                    "created": 1635563933090,
+                                    "text": "例如过滤器"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cfcf0zl6o600",
+                                    "created": 1635563936305,
+                                    "text": "中间件"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cfcf1kdkugw0",
+                    "created": 1635563981557,
+                    "text": "实现方式"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cfcf1ooryu00",
+                            "created": 1635563990941,
+                            "text": "链表"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cfcf1tq0ktc0",
+                            "created": 1635564001900,
+                            "text": "数组"
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

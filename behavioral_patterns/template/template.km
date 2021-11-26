@@ -1,0 +1,155 @@
+{
+    "root": {
+        "data": {
+            "id": "cfhulzul4uo0",
+            "created": 1636115698954,
+            "text": "template-method(模板方法模式)"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cfhunkiwu6g0",
+                    "created": 1636115822323,
+                    "text": "定义",
+                    "layout_mind_offset": {
+                        "x": -93,
+                        "y": 5
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cfhunpdo4io0",
+                            "created": 1636115832890,
+                            "text": "一种行为设计模式，它在超类中定义一个了算法的框架，并将某些步骤推迟到子类中的实现。\n模板方法模式可以让子类在不改变算法结构的情况下，重新定义算法的某些步骤。"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cfhut2eb0xc0",
+                            "created": 1636116253048,
+                            "text": "这里的算法可以理解为业务逻辑"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cfhutf7qmmo0",
+                    "created": 1636116280949,
+                    "text": "应用逻辑",
+                    "layout_mind_offset": {
+                        "x": -107,
+                        "y": 8
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cfhutpove5c0",
+                            "created": 1636116303752,
+                            "text": "拓展"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cfhuufcnhdk0",
+                                    "created": 1636116359611,
+                                    "text": "框架通过模板模式提供功能拓展点，让用户可以在不修改框架源码的情况下，基于扩展点定制框架的功能",
+                                    "layout_left_offset": {
+                                        "x": 30,
+                                        "y": 0
+                                    }
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cfhuxaza7nc0",
+                            "created": 1636116585187,
+                            "text": "复用"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cfhuxdcsb8g0",
+                                    "created": 1636116590357,
+                                    "text": "复用指的是，所有的子类可以复用父类提供的模板方法的代码",
+                                    "layout_left_offset": {
+                                        "x": 13,
+                                        "y": -5
+                                    }
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cfhuyzf9iig0",
+                    "created": 1636116716760,
+                    "text": "实现细节",
+                    "layout_mind_offset": {
+                        "x": 98,
+                        "y": 1
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cfhuzcq8zjc0",
+                            "created": 1636116745723,
+                            "text": "分析目标算法，确定是否能将其分解成多个步骤。\n从子类的角度出发，考虑那些步骤能够通用，那些步骤各不相同。",
+                            "layout_left_offset": {
+                                "x": -30.000008136034012,
+                                "y": -25
+                            }
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cfhv0fpd5sw0",
+                            "created": 1636116830564,
+                            "text": "创建抽象基类，并声明一个模板方法和代表算法步骤的一系列抽象方法。\n在模板方法中根据算法结构依次调用相应的步骤。"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cfhv6h0kpls0",
+                            "created": 1636117303603,
+                            "text": "虽然可将所有步骤全部设置为抽象类，\n但默认实现可能会给部分步骤带来好处，因为子类序曲实现那些方法。"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cfhv2txue680",
+                            "created": 1636117018280,
+                            "text": "可考虑在算法的关键步骤之间添加钩子"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cfhv4lgkhm00",
+                            "created": 1636117156549,
+                            "text": "为每个算法变体创建一个具体子类，它必须实现所有的抽象步骤，也可以重写部分可选步骤。"
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

@@ -1,0 +1,207 @@
+{
+    "root": {
+        "data": {
+            "id": "cfcggai5gn40",
+            "created": 1635567956638,
+            "text": "state(状态模式)"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cfcgie4a7yw0",
+                    "created": 1635568121235,
+                    "text": "定义"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cfcgigu2uow0",
+                            "created": 1635568127149,
+                            "text": "行为设计模式，让人能够在一个对象的内部状态改变时，改变其行为，使其看上去就像改变了自身的所属的类一样"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cfcgqoca8rc0",
+                    "created": 1635568770400,
+                    "text": "其他"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cfcgyxcadiw0",
+                            "created": 1635569416905,
+                            "text": "状态模式与有限状态机的概念密切相关"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cfcgsjh2mao0",
+                    "created": 1635568916534,
+                    "text": "动机"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cfcgsn2hz6o0",
+                            "created": 1635568924360,
+                            "text": "允许一个对象在其内部状态改变时改变它的行为"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cfcgtkqi5ls0",
+                    "created": 1635568997645,
+                    "text": "模式结构"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cfcgtre9tp40",
+                            "created": 1635569012144,
+                            "text": "Context: 环境类; State: 抽象状态; ConCreteState: 具体状态类"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cfch23ezib40",
+                    "created": 1635569665221,
+                    "text": "实现细节"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cfch2q8aa9k0",
+                            "created": 1635569714882,
+                            "text": "确定那些类是上下文，它可能是包含依赖于状态的已有类。"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cfch5nr6iv40",
+                            "created": 1635569944586,
+                            "text": "声明状态接口。最好是仅把关注点放在那些可能包含特定于状态的的行为的方法上"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cfch88bik800",
+                            "created": 1635570146080,
+                            "text": "为每个实际状态创建一个继承于状态接口的类"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cfch98ex2yw0",
+                            "created": 1635570224650,
+                            "text": "在上下文类中添加一个状态接口类型的引用成员变量，以及一个用于修改成员变量值的公用设置器"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cfchbb81ogg0",
+                            "created": 1635570387493,
+                            "text": "为切换上下文，需要创建某个状态类实例，并将其传递给上下文"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cfd8gj2s7vk0",
+                    "created": 1635646966377,
+                    "text": "常用于实现状态机"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cfd8gxx9kog0",
+                            "created": 1635646998696,
+                            "text": "常用于游戏、工作流引擎"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cfd8hbjc4x40",
+                    "created": 1635647028328,
+                    "text": "有限状态机"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cfd8hniqc9s0",
+                            "created": 1635647054413,
+                            "text": "状态"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cfd8hr0a8q00",
+                            "created": 1635647062005,
+                            "text": "事件"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cfd8ipl9sqg0",
+                                    "created": 1635647137284,
+                                    "text": "事件也称转移条件"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cfd8izfcmf40",
+                                    "created": 1635647158694,
+                                    "text": "事件触发状态的转移及动作的执行"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cfd8hvq9igg0",
+                            "created": 1635647072283,
+                            "text": "动作"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cfd8jevj6o00",
+                                    "created": 1635647192324,
+                                    "text": "不是必须的"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
